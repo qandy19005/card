@@ -64,7 +64,8 @@ body * {
     align-items: center;
     justify-content: center;
     height: 300px;
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
 
 .card-back:hover .business-card{
@@ -77,7 +78,6 @@ body * {
     font-size: 8rem;
     color: #f3f3f3;
     opacity: 0;
-    transition: 1s all ease-in-out;
     z-index: -1;
 }
 
@@ -234,7 +234,7 @@ body * {
 
 .card-back:hover .project-item-group {
     transition: 2s all ease-in-out;
-    transition-delay: 1s;
+    /* transition-delay: 1s; */
     opacity: 1;
 }
 /* SKILL GROUP */
@@ -250,7 +250,7 @@ body * {
 
 .card-back:hover .skill-button-group {
     transition: 3s all ease-in-out;
-    transition-delay: 1.5s;
+    /* transition-delay: 1.5s; */
     opacity: 1;
 }
 /* KEYBOARD BUTTON */
@@ -538,29 +538,32 @@ body * {
 
 @media (max-width: 1200px) {
     /* CARD */
+    .card {
+        margin-top: 20px;
+    }
     .card-back {
         width: 400px;
     }
     .card-front {
         width: 400px;
     }
-    .card-back:hover .card-front {
+    .card-back:active .card-front {
         height: 650px;
     }
-    .card-back:hover {
+    .card-back:active {
         height: 650px;
     }
-    .card-front:hover {
+    .card-front:active {
         height: 650px;
     }
     /* FRONT END TEXT */
     .front-end-text {
         font-size: 6rem;
     }
-    .card-back:hover .front-text {
+    .card-back:active .front-text {
         left: -200px;
     }
-    .card-back:hover .end-text {
+    .card-back:active .end-text {
         left: 400px;
     }
     /* ABOUT */
@@ -588,7 +591,7 @@ body * {
 @media (max-width: 576px) {
     /* CARD */
     .card {
-        margin-top: 100px;
+        margin-top: 30px;
     }
     .card-back {
         width: 95%;
@@ -596,13 +599,13 @@ body * {
     .card-front {
         width: 100%;
     }
-    .card-back:hover .card-front {
+    .card-back:active .card-front {
         height: 700px;
     }
-    .card-back:hover {
+    .card-back:active {
         height: 700px;
     }
-    .card-front:hover {
+    .card-front:active {
         height: 700px;
     }
     /* FRONT END TEXT */
@@ -617,11 +620,11 @@ body * {
         top: 60%;
         left: 100px;
     }
-    .card-back:hover .front-text {
+    .card-back:active .front-text {
         top: -100px;
         left: 40px;
     }
-    .card-back:hover .end-text {
+    .card-back:active .end-text {
         top: 95%;
         left: 100px;
     }
